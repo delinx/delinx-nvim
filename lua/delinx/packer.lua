@@ -23,6 +23,10 @@ use {"ellisonleao/gruvbox.nvim"}
 use {"ThePrimeagen/harpoon"}
 use {"github/copilot.vim"}
 use {"Yggdroot/indentLine"}
+use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+}
 use {"lewis6991/gitsigns.nvim"}
 use {"mfussenegger/nvim-lint"}
 use {
