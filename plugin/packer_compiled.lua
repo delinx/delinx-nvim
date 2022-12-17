@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "/home/del/.local/share/nvim/site/pack/packer/start/indentLine",
     url = "https://github.com/Yggdroot/indentLine"
   },
+  ["lsp-format.nvim"] = {
+    loaded = true,
+    path = "/home/del/.local/share/nvim/site/pack/packer/start/lsp-format.nvim",
+    url = "https://github.com/lukas-reineke/lsp-format.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/del/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",

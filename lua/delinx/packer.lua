@@ -18,7 +18,9 @@ return require('packer').startup(function(use)
         -- optional for icon support
         requires = { 'nvim-tree/nvim-web-devicons' }
     }
+-- init.lua
 
+    use {"lukas-reineke/lsp-format.nvim"}
     use { "ellisonleao/gruvbox.nvim" }
     use { "ThePrimeagen/harpoon" }
     use { "github/copilot.vim" }
