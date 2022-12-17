@@ -23,6 +23,7 @@ use {"ellisonleao/gruvbox.nvim"}
 use {"ThePrimeagen/harpoon"}
 use {"github/copilot.vim"}
 use {"Yggdroot/indentLine"}
+use {"lewis6991/gitsigns.nvim"}
 use {"mfussenegger/nvim-lint"}
 use {
   'nvim-lualine/lualine.nvim',
