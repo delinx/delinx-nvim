@@ -3,6 +3,7 @@ vim.g.fzf_layout = {down="20%"}
 
 --opt
 vim.opt.relativenumber = true
+vim.opt.guicursor = ""
 vim.opt.guifont = "RobotoNerd:h14"
 vim.opt.background = "dark"
 vim.opt.colorcolumn="80"
