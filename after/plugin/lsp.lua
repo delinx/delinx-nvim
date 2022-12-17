@@ -13,10 +13,6 @@ lsp.ensure_installed({
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
-  ['<C-N>'] = cmp.mapping.select_prev_item(cmp_select),
-  ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-  ['<C-y>'] = cmp.mapping.confirm({ select = true }),
-  ["<C-Space>"] = cmp.mapping.complete(),
 })
 
 -- disable completion with tab
@@ -28,7 +24,9 @@ lsp.setup_nvim_cmp({
   mapping = cmp_mappings
 })
 
-lsp.set_preferences({
+
+
+lsp.set_preferences({ 
     suggest_lsp_servers = false,
     sign_icons = {
         error = 'E',
@@ -41,6 +39,13 @@ lsp.set_preferences({
 vim.diagnostic.config({
     virtual_text = true,
 })
+
+lsp.configure('clangd', {
+  capabilities = {
+    offsetEncoding = "utf-8",
+  },
+})
+
 
 lsp.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
@@ -63,4 +68,6 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+-- lsp-compe setup
 

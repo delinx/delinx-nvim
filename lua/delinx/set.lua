@@ -34,8 +34,13 @@ vim.opt.hidden = true
 vim.opt.termguicolors = true
 vim.opt.updatetime = 50 
 vim.opt.clipboard="unnamedplus"
+vim.opt.encoding="utf-8"
 
 -- g
 vim.g.tablineclosebutton = 1
 vim.g.indentLine_char = '│'
+vim.g.clangd_encoding = 'utf-8'
+
+vim.g.lsp_settings = { encoding ='utf-8' }
+
 
