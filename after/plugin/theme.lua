@@ -11,9 +11,14 @@ function ColorMyPencils(color)
     vim.api.nvim_set_hl(0, "CursorLine", { fg = "none", bg = "none" })
     vim.api.nvim_set_hl(0, "CursorLineNR", { fg = "#D79717", bg = "none" })
 
-    vim.api.nvim_set_hl(0, "GitSignsAdd", { bg = "none", fg = "#98be65" })
-    vim.api.nvim_set_hl(0, "GitSignsChange", { bg = "none", fg = "#51afef" })
-    vim.api.nvim_set_hl(0, "GitSignsDelete", { bg = "none" ,fg = "#ec5f67" })
+    vim.api.nvim_set_hl(0, "GitSignsAdd", { bg = "none", fg = "#76C683" })
+    vim.api.nvim_set_hl(0, "GitSignsChange", { bg = "none", fg = "#CBC874" })
+    vim.api.nvim_set_hl(0, "GitSignsDelete", { bg = "none", fg = "#DC666A" })
+
+    vim.api.nvim_set_hl(0, "DiagnosticSignWarn", { bg = "none", fg = "#D79717" })
+    vim.api.nvim_set_hl(0, "DiagnosticSignError", { bg = "none", fg = "#DC666A" })
+    vim.api.nvim_set_hl(0, "DiagnosticSignInfo", { bg = "none", fg = "#76C683" })
+    vim.api.nvim_set_hl(0, "DiagnosticSignHint", { bg = "none", fg = "#76C683" })
 end
 
 require("gruvbox").setup({
