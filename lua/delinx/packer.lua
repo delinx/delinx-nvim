@@ -40,6 +40,13 @@ return require('packer').startup(function(use)
     use { "mbbill/undotree" }
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use { "lukas-reineke/indent-blankline.nvim" }
+   use({
+    'noib3/nvim-cokeline',
+    requires = 'kyazdani42/nvim-web-devicons', -- If you want devicons
+    config = function()
+      require('cokeline').setup()
+    end
+  })
 
     use {
         'VonHeikemen/lsp-zero.nvim',

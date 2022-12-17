@@ -62,9 +62,8 @@ vim.keymap.set("n", "<leader>fR", "<cmd>:%! rustfmt<CR>")
 
 
 -- switch beetwen header and source
-vim.keymap.set("n", "<leader>hs", "<cmd>ClangdSwitchSourceHeader<CR>")
+vim.keymap.set("n", "gh", "<cmd>ClangdSwitchSourceHeader<CR>")
 
 -- format rust
-vim.keymap.set("n", "frr",  "<cmd>:!rustfmt %<CR>")
-vim.keymap.set("n", "frc",  "<cmd>:!rustfmt +nightly %<CR>")
-
+vim.keymap.set("n", "frr", "<cmd>:!rustfmt %<CR>")
+vim.keymap.set("n", "frc", "<cmd>:!rustfmt +nightly %<CR>")
