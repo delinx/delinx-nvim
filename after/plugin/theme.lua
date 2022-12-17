@@ -8,12 +8,14 @@ function ColorMyPencils(color)
 	vim.api.nvim_set_hl(0, "VirtColumn", { fg = "#1c1c1c", bg = "black"})
 	vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })
 	vim.api.nvim_set_hl(0, "TermCursor", {bg="black", fg="black"})
+    vim.api.nvim_set_hl(0, "CursorLine", {fg="none", bg="none"})
+    vim.api.nvim_set_hl(0, "CursorLineNR", {fg="#D79717", bg="none"})
 end
 
 require("gruvbox").setup({
 			    undercurl = true,
 			    underline = true,
-			    bold = false,
+			    bold = true,
 			    italic = false,
 			    strikethrough = true,
 			    invert_selection = false,
@@ -23,7 +25,7 @@ require("gruvbox").setup({
 			    inverse = true, -- invert background for search, diffs, statuslines and errors
 			    contrast = "hard", -- can be "hard", "soft" or empty string
 			    overrides = {
-                    SignColumn = {bg = "#ff9900"}
+                    SignColumn = {bg = "#ff9900"},
 			    },
 			    })
 
