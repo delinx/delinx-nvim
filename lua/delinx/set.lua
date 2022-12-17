@@ -2,6 +2,7 @@
 vim.g.fzf_layout = {down="20%"}
 
 --opt
+vim.opt.list = false
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
 vim.opt.guicursor = ""
@@ -36,4 +37,5 @@ vim.opt.clipboard="unnamedplus"
 
 -- g
 vim.g.tablineclosebutton = 1
+vim.g.indentLine_char = '│'
 

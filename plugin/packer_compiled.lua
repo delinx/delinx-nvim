@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/del/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
+  indentLine = {
+    loaded = true,
+    path = "/home/del/.local/share/nvim/site/pack/packer/start/indentLine",
+    url = "https://github.com/Yggdroot/indentLine"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/del/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",

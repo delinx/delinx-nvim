@@ -22,6 +22,7 @@ use { 'ibhagwan/fzf-lua',
 use {"ellisonleao/gruvbox.nvim"}
 use {"ThePrimeagen/harpoon"}
 use {"github/copilot.vim"}
+use {"Yggdroot/indentLine"}
 use {"mfussenegger/nvim-lint"}
 use {
   'nvim-lualine/lualine.nvim',
