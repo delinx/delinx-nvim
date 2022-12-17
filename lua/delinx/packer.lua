@@ -18,13 +18,13 @@ return require('packer').startup(function(use)
         -- optional for icon support
         requires = { 'nvim-tree/nvim-web-devicons' }
     }
--- init.lua
+    -- init.lua
 
-    use {"lukas-reineke/lsp-format.nvim"}
+    use { "lukas-reineke/lsp-format.nvim" }
     use { "ellisonleao/gruvbox.nvim" }
     use { "ThePrimeagen/harpoon" }
     use { "github/copilot.vim" }
-    use { "Yggdroot/indentLine" }
+    -- use { "Yggdroot/indentLine" }
     use {
         "windwp/nvim-autopairs",
         config = function() require("nvim-autopairs").setup {} end
@@ -39,6 +39,7 @@ return require('packer').startup(function(use)
     use { "lukas-reineke/virt-column.nvim" }
     use { "mbbill/undotree" }
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+    use { "lukas-reineke/indent-blankline.nvim" }
 
     use {
         'VonHeikemen/lsp-zero.nvim',
