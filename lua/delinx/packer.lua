@@ -23,6 +23,10 @@ use {"ellisonleao/gruvbox.nvim"}
 use {"ThePrimeagen/harpoon"}
 use {"github/copilot.vim"}
 use {"mfussenegger/nvim-lint"}
+use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+}
 use {"p00f/nvim-ts-rainbow"}
 use {"lukas-reineke/virt-column.nvim"}
 use {"mbbill/undotree"}
