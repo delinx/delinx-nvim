@@ -74,7 +74,7 @@ setw -g pane-base-index 1
 set-option -g mouse on
 
 set -g status off
-bind-key -n b set-option -g status
+bind-key b set-option -g status
 
 set-option -sa terminal-overrides ",xterm*:Tc"
 
