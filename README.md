@@ -77,4 +77,6 @@ set -g status off
 bind-key -n b set-option -g status
 
 set-option -sa terminal-overrides ",xterm*:Tc"
+
+set -sg escape-time 0
 ```
