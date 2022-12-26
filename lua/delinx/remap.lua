@@ -59,6 +59,8 @@ vim.keymap.set("n", "<leader>fC", "<cmd>:%s/^\\(\\s*\\).*\\zs{\\s*$/\\r\\1{/<CR>
 -- Format Rust
 vim.keymap.set("n", "<leader>fR", "<cmd>:%! rustfmt<CR>")
 
+-- Tree
+vim.keymap.set("n", "<leader>q", "<cmd>NvimTreeToggle<CR>")
 
 
 -- switch beetwen header and source

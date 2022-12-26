@@ -39,3 +39,5 @@ require("gruvbox").setup({
 })
 
 ColorMyPencils()
+
+vim.cmd("autocmd BufWritePost * TSDisable rainbow | TSEnable rainbow")

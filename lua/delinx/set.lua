@@ -24,7 +24,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.spell = false
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.scrolloff = 32
+vim.opt.scrolloff = 8
 vim.opt.cmdheight = 1
 vim.opt.linespace = 4
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
@@ -42,3 +42,4 @@ vim.g.indentLine_char = '│'
 vim.g.clangd_encoding = 'utf-8'
 
 vim.g.lsp_settings = { encoding = 'utf-8' }
+
