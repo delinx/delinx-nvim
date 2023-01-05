@@ -42,4 +42,3 @@ vim.g.indentLine_char = '│'
 vim.g.clangd_encoding = 'utf-8'
 
 vim.g.lsp_settings = { encoding = 'utf-8' }
-

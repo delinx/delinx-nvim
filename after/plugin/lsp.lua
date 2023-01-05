@@ -46,7 +46,11 @@ lsp.configure('clangd', {
     },
 })
 
-require("lsp-format").setup {}
+require("lsp-format").setup {
+    rust = {
+        exclude = { "rustfmt" },
+    }
+}
 
 lsp.on_attach(function(client, bufnr)
     local opts = { buffer = bufnr, remap = false }
